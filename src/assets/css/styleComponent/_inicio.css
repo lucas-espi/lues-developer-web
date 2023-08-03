@@ -92,6 +92,7 @@
 /* mobile */
 @media screen and (max-width: 766px){
     .container-inicio{
+        height: 100%;
         margin: .4rem 0;
         align-items: start;
         /* justify-content: center; */
