@@ -172,6 +172,17 @@
                             <a href="https://github.com/lucas-espi/Camino-Aventura-React" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
                         </div>
                     </div>
+
+                    <div class="portfolio-card-box">
+                        <img src="./src/public/img/ca-II.png" class="img-card" alt="Previsualización del Proyecto">
+                          <h2 class="h2-card">Camino Aventura II</h2>
+                         <p class="p-card">Descripción breve del proyecto.</p>
+                         <div class="links">
+                             <a href="https://camino-aventura.netlify.app" class="btn-url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar</a> 
+                             <a href="https://github.com/lucas-espi/Camino-Aventura-React" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
+                         </div>
+                     </div>
+
                 </div>
 
             </div>
@@ -180,14 +191,33 @@
             <div class="container-box-contacto">
                 <h1 class="inicio-titulo">CONTACTO</h1>
                 <div class="box-contacto">
+
                     <div class="box-contacto-datos">
-                        <p><i class="fa-solid fa-envelope"></i> Email <a href="malito:lues.dw@gmail.com"></a></p>
-                        <p><i class="fa-brands fa-whatsapp"></i> Whatsaap </p>
-                        <p><i class="fa-brands fa-linkedin"></i> Linkedin </p> 
-                        <p><i class="fa-brands fa-instagram"></i> Instagram </p>
+                        <h2 class="subtitle-contacto medios">Medios</h2>
+                        <p class="p-cont"><a href="malito:lues.dw@gmail.com" class="a-contac gmail"><i class="fa-solid fa-envelope"></i> Email</a></p>
+                        <p class="p-cont"><a href="" class="a-contac whatsapp"><i class="fa-brands fa-whatsapp "></i> Whatsapp</a></p>
+                        <p class="p-cont"><a href="" class="a-contac linkedin"><i class="fa-brands fa-linkedin "></i> Linkedin</a></p> 
+                        <p class="p-cont"><a href="" class="a-contac instagram"><i class="fa-brands fa-instagram "></i> Instagram</a></p>
                     </div>
+
                     <div class="box-contacto-formulario">
                         <!-- desarrollar form -->
+                        <h2 class="subtitle-contacto formulario">Formulario <i class="fa-solid fa-arrow-down"></i> </h2>
+                        <form class="form-contacto" action="#" method="post">
+                            <label for="nombre" >Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="  Nombre y Apellido" required>
+            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="  ejemplo@gmail.com" required>
+            
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="  011-12345678">
+            
+                            <label for="consulta">Consulta:</label>
+                            <textarea id="consulta" name="consulta" placeholder="  Escriba su consulta y le responderemos..." rows="4" required></textarea>
+            
+                            <button type="submit">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>

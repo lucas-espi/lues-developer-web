@@ -20,7 +20,7 @@
     /* background-color: brown; */
 }
 .inicio-titulo-porfolio{
-    height: 30%;
+    height: 10%;
     width: 100%;
     /* background-color:darkcyan; */
     font-size: 2.8rem;
@@ -28,6 +28,7 @@
     text-align: left;
 }
 .p-porfolio{
+  height: 10%;
   text-align: left;
   font-size: 1rem;
   font-family: var(--ffamlily-two);
@@ -37,11 +38,12 @@
 .box-porfolio{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     margin-top: 2rem;
     
-    height: 70%;
+    height: 80%;
     width: 100%;
     /* background-color: blueviolet; */
     box-shadow: 0 7px 15px 1px rgba(0,0,0,0.2);
@@ -51,14 +53,14 @@
 /* card */
 
 .portfolio-card-box {
-    background-color: var(--color-background-1);
+    background-color: rgba(25, 85, 124, 0.86);
     border-radius: .4rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-image:linear-gradient(rgb(91, 44, 111, .5), rgb(91, 44, 111, .5));
+    /* background-image:linear-gradient(rgb(91, 44, 111, .5), rgb(91, 44, 111, .5)); */
     padding: .5rem;
-    max-width: 16rem;
+    max-width: 15rem;
 
-    width: 16rem;
+    width: 14rem;
     height: 18rem;
 
     display: flex;
@@ -131,6 +133,7 @@
     
         width: 13rem;
         height: 14rem;
+        margin: 1rem;
     }
     .img-card {
         margin-bottom: .3rem;
@@ -146,25 +149,64 @@
 }
 /* mobile */
 @media screen and (max-width: 766px){
+    .p-porfolio{
+        height: 8%;
+        text-align: left;
+        font-size: .8rem;
+    }
+
     .box-porfolio{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         margin-top: 1rem;
+        /* background-color: aqua; */
         
         height: 80%;
     }
     .portfolio-card-box {
-        background-color: var(--color-background-1);
         border-radius: .3rem;
         padding: .4rem;
-        max-width: 18rem;
+        max-width: 11rem;
     
-        width: 18rem;
+        width: 11rem;
         height: 10rem;
     
+        align-items: center;
+        justify-content: space-around;
+        margin:.5rem;
+
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
     }
+
+    .img-card {
+        margin-bottom: 0rem;
+        width: 100%;
+        height: 45%;
+    }
+      
+    .h2-card {
+        font-size: .9rem;
+    }
+      
+    .p-card {
+        font-size: .7rem;
+    }
+
+    .portfolio-card-box .links {
+        margin-top: .2rem;
+        margin-bottom: .1rem;
+        width: 100%;
+        max-height: 1.5rem;
+        
+        /* border: 1px solid black; */
+    }
+
+    .btn-github, .btn-url{
+        border-radius: .2rem;
+        width: 45%;
+        height: 100%;
+        padding: .1rem;
+        font-size: .8rem;
+      }
 }
