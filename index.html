@@ -10,6 +10,8 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Lucas Espindola">
 
+     <!-- link js -->
+    <script defer src="./src/assets/js/app.js"></script>
      <!-- Fontawesome -->  
      <link rel="stylesheet" href="./src/assets/iconos-fontawesome/css/all.min.css">
 
@@ -37,24 +39,21 @@
 
                     <ul class="header-nav">
                         <li class="header-nav-li">
-                            <a class="li-link" href="">Inicio</a>
+                            <a class="li-link" href="#inicio">Inicio</a>
                         </li>
                         <li class="header-nav-li">
-                            <a class="li-link" href="">Sobre mi</a>
+                            <a class="li-link" href="#sobre-mi">Sobre mi</a>
                         </li>
-                        <!-- <li class="header-nav-li">
-                            <a class="li-link" href="">Skills</a>
-                        </li> -->
                         <li class="header-nav-li">
-                            <a class="li-link" href="./src/pages/porfolio.html">Porfolio</a>
+                            <a class="li-link" href="#porfolio">Porfolio</a>
                         </li>
                         <li class="header-nav-li contacto">
-                            <a class="li-link" href="">Contacto</a>
+                            <a class="li-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </nav>
         </header>
-        <section class="container-inicio">
+        <section class="container-inicio" id="inicio">
             <div class="container-box-inicio">
                 <div class="box-inicio-descripcion">
                     <span><p class="text-maquina">Hola!</p></span>
@@ -84,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-sobre-mi">
+        <section class="container-sobre-mi" id="sobre-mi">
             <div class="container-box-sobre-mi">
                 <h1 class="inicio-titulo">SOBRE MI</h1>
                 <p class="text-medio">
@@ -116,78 +115,21 @@
                 <i class="fa-brands fa-node"></i>
             </div>
         </section>
-        <!-- <section class="container-skills">
-            <div class="container-box-skills">
-                <h1 class="inicio-titulo">SKILLS</h1>
-                <div class="box-skills">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-sass"></i>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <i class="fa-brands fa-git"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-react"></i>
-                    <i class="fa-brands fa-figma"></i>
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-brands fa-node"></i>
-                </div>
-            </div>
-        </section> -->
-        <section class="container-porfolio">
+        
+        <section class="container-porfolio" id="porfolio">
             <div class="container-box-porfolio">
                 <h1 class="inicio-titulo-porfolio">PORFOLIO</h1>
                 <p class="p-porfolio">Aquí encontrarás una muestra de mis proyectos, desde diseño gráfico
                      hasta desarrollo web. 
                      Explora este espacio para descubrir cómo he transformado ideas en realidades.</p>
 
-                <div class="box-porfolio">
+                <div class="box-porfolio" id="box-porfolio">
 
-                    <div class="portfolio-card-box">
-                        <img src="./src/public/img/eureka.png" class="img-card" alt="Previsualización del Proyecto">
-                         <h2 class="h2-card">Eureka Artesanal</h2>
-                     <p class="p-card">Descripción breve del proyecto.</p>
-                        <div class="links">
-                            <a href=" https://lucas-espi.github.io/Proyecto_final-Eureka/" class="btn-url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar</a> 
-                            <a href="https://github.com/lucas-espi/Proyecto_final-Eureka" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card-box">
-                        <img src="./src/public/img/ca.png" class="img-card" alt="Previsualización del Proyecto">
-                         <h2 class="h2-card">Camino Aventura</h2>
-                        <p class="p-card">Descripción breve del proyecto.</p>
-                        <div class="links">
-                            <a href="https://lucas-espi.github.io/ProyectoFinal-JS/" class="btn-url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar</a> 
-                            <a href="https://github.com/lucas-espi/ProyectoFinal-JS" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card-box">
-                       <img src="./src/public/img/ca-II.png" class="img-card" alt="Previsualización del Proyecto">
-                         <h2 class="h2-card">Camino Aventura II</h2>
-                        <p class="p-card">Descripción breve del proyecto.</p>
-                        <div class="links">
-                            <a href="https://camino-aventura.netlify.app" class="btn-url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar</a> 
-                            <a href="https://github.com/lucas-espi/Camino-Aventura-React" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card-box">
-                        <img src="./src/public/img/ca-II.png" class="img-card" alt="Previsualización del Proyecto">
-                          <h2 class="h2-card">Camino Aventura II</h2>
-                         <p class="p-card">Descripción breve del proyecto.</p>
-                         <div class="links">
-                             <a href="https://camino-aventura.netlify.app" class="btn-url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar</a> 
-                             <a href="https://github.com/lucas-espi/Camino-Aventura-React" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
-                         </div>
-                     </div>
-
-                </div>
+                    <!-- cards creadas desdee javaScript -->
 
             </div>
         </section>
-        <section class="container-contacto">
+        <section class="container-contacto" id="contacto">
             <div class="container-box-contacto">
                 <h1 class="inicio-titulo">CONTACTO</h1>
                 <div class="box-contacto">

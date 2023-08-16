@@ -78,12 +78,13 @@
     font-size: 1rem;
     font-weight: 600;
     margin: .8rem;
+    color: var(--color-black);
 }
 
 .li-link:hover{
-    color: #212F3D;
+    color: #005db4;
     transition: .05s;
-    border-bottom: #212F3D solid 2px;
+    border-bottom: #005db4 solid 2px;
 }
 
 .contacto{
