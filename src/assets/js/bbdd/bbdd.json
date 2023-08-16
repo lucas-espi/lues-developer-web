@@ -1,0 +1,31 @@
+
+[
+    {
+        "titulo": "Eureka Artesanal",
+        "imagen": "/src/public/img/eureka.png",
+        "descripcion": "Descripción breve del proyecto",
+        "urlProyecto": "https://lucas-espi.github.io/Proyecto_final-Eureka/",
+        "urlGithub": "https://github.com/lucas-espi/Proyecto_final-Eureka"
+    },
+    {
+        "titulo": "Camino Aventura",
+        "imagen": "/src/public/img/ca.png",
+        "descripcion": "Descripción breve del proyecto.",
+        "urlProyecto": "https://lucas-espi.github.io/ProyectoFinal-JS/",
+        "urlGithub": "https://github.com/lucas-espi/ProyectoFinal-JS"
+    },
+    {
+        "titulo": "Camino Aventura II",
+        "imagen": "/src/public/img/ca-II.png",
+        "descripcion": "Descripción breve del proyecto.",
+        "urlProyecto": "https://camino-aventura.netlify.app",
+        "urlGithub": "https://github.com/lucas-espi/Camino-Aventura-React"
+    },
+    {
+        "titulo": "Camino Aventura II",
+        "imagen": "/src/public/img/ca-II.png",
+        "descripcion": "Descripción breve del proyecto.",
+        "urlProyecto": "https://camino-aventura.netlify.app",
+        "urlGithub": "https://github.com/lucas-espi/Camino-Aventura-React"
+    }
+]
