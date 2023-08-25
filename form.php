@@ -26,7 +26,7 @@ $asunto = 'Este email fuen enviado desde Porfolio Lucas Espindola';
 mail($para, $asunto, utf8_decode($consulta), $header);
 
 // Redirecciona al enviar el formulario 
-header('Location:/pages/exito.html');
+header('Location:exito.html');
 ?>
 
 
