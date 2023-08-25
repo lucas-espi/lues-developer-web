@@ -1,32 +1,28 @@
 
+
 <?php
-// Conecto con mi form / name / con el server a traves de lo name
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $telefono = $_POST['telefono'];
+    $consultaTexto = $_POST['consulta'];
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$consulta = $_POST['consulta'];
+    $consulta = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+    $consulta .= "Su email es: " . $email . "\r\n";
+    $consulta .= "Su telefono es: " . $telefono . "\r\n";
+    $consulta .= "Consulta: " . $consultaTexto . "\r\n";
+    $consulta .= "Enviado el " . date('d/m/y', time());
 
-// $header .= "Content-Type text/plain";
+    $para = 'lues.dw@gmail.com';
+    $asunto = 'Este email fue enviado desde Porfolio Lucas Espindola';
+    $header = "From: $email\r\n" . "Reply-To: $email\r\n";
 
-// Como va a llegar el cuerpo del email a mi
-
-$consulta = "Este mensaje fue enviado por" . $nombre . ",\r\n";
-$consulta .= "Su email es: " . $email . "\r\n"; 
-$consulta .= "Su telefono es: " . $telefono . "\r\n";
-$consulta .= "Consulta: " . $_POST['consulta'] . "\r\n";
-$consulta .= "Enviado el " . date('d/m/y', time());
-
-
-$para = 'lues.dw@gmail.com';
-$asunto = 'Este email fuen enviado desde Porfolio Lucas Espindola';
-
-// Funcion mail 
-// A quien le va allegar ese email
-mail($para, $asunto, utf8_decode($consulta), $header);
-
-// Redirecciona al enviar el formulario 
-header('Location:exito.html');
+    if (mail($para, $asunto, utf8_decode($consulta), $header)) {
+        header('Location: exito.html');
+        exit;
+    } else {
+        echo "Hubo un problema al enviar el correo.";
+    }
+}
 ?>
-
 
