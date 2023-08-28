@@ -149,7 +149,7 @@ background-color: var(--color-four);
     .p-porfolio{
         height: 8%;
         text-align: left;
-        font-size: .8rem;
+        font-size: .6rem;
     }
 
     .box-porfolio{
@@ -165,7 +165,7 @@ background-color: var(--color-four);
         padding: .4rem;
         max-width: 11rem;
     
-        width: 11rem;
+        width: 8rem;
         height: 10rem;
     
         align-items: center;

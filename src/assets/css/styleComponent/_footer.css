@@ -42,3 +42,10 @@
 .container-box-footer > button > a > i{
     font-size: 1rem;
 }
+
+@media screen and (max-width: 766px){
+    .container-box-footer > p{
+    
+        font-size: .6rem
+    }
+}
