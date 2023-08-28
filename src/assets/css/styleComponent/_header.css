@@ -34,8 +34,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     border-radius: .3rem;
+    position: fixed;
+    top: 0;
 }
 .container-box-header{
     display: flex;
@@ -136,7 +138,7 @@
     .menu-input:checked ~ .header-nav{
         display: flex;
         position: absolute;
-        top: 4rem;
+        top: 4.8rem;
         right: 0;
         border-radius: .3rem;
 
