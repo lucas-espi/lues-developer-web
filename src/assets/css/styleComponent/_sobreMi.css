@@ -68,6 +68,14 @@
 
 /* Tablet */
 @media  screen and (min-width: 767px) and (max-width: 1023px) {
+    .container-box-sobre-mi{
+           
+        .inicio-titulo{
+            font-size: 1.8rem;
+
+        }
+    }
+
     .box-skills > i{
    
         font-size: 2rem;
@@ -85,6 +93,10 @@
         align-items: start;
         justify-content: space-around;
     
+        .inicio-titulo{
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
     }
     .box-skills{
         display: flex;

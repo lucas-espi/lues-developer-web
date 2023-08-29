@@ -124,6 +124,9 @@ background-color: var(--color-four);
 
 /* Tablet */
 @media  screen and (min-width: 767px) and (max-width: 1023px) {
+    .inicio-titulo-porfolio{
+        font-size: 1.8rem;
+    }
     .portfolio-card-box {
         padding: .4rem;
         max-width: 13rem;
@@ -159,6 +162,9 @@ background-color: var(--color-four);
         /* background-color: aqua; */
         
         height: 80%;
+    }
+    .inicio-titulo-porfolio{
+        font-size: 1.4rem;
     }
     .portfolio-card-box {
         border-radius: .3rem;
