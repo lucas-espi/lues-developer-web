@@ -137,7 +137,7 @@
 
     .menu-input:checked ~ .header-nav{
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 4.8rem;
         right: 0;
         border-radius: .3rem;

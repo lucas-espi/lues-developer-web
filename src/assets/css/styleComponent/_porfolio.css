@@ -119,7 +119,18 @@ background-color: var(--color-four);
 
 .btn-github:hover, .btn-url:hover{
     background-color: #9c74be;
-    color: var(  --color-four);
+    color: var(--color-four);
+}
+
+.link-porfolio-extend{
+    text-align: right;
+    text-decoration: none;
+    color: var(--color-background-2);
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+}
+.link-porfolio-extend:hover{
+    color: var(--color-one);
 }
 
 /* Tablet */
@@ -145,6 +156,9 @@ background-color: var(--color-four);
       
     .p-card {
         font-size: .8rem;
+    }
+    .link-porfolio-extend{
+        font-size: 1.4rem;
     }
 }
 /* mobile */
@@ -211,5 +225,8 @@ background-color: var(--color-four);
         height: 100%;
         padding: .1rem;
         font-size: .8rem;
-      }
+    }
+    .link-porfolio-extend{
+        font-size: 1rem;
+    }
 }
