@@ -38,6 +38,7 @@
     border-radius: .3rem;
     position: fixed;
     top: 0;
+    max-width: 1440PX;
 }
 .container-box-header{
     display: flex;
@@ -138,7 +139,7 @@
     .menu-input:checked ~ .header-nav{
         display: flex;
         position: fixed;
-        top: 4.8rem;
+        top: 3.8rem;
         right: 0;
         border-radius: .3rem;
 
