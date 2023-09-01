@@ -8,13 +8,13 @@ require('dotenv').config();
 
 router.post('/send-email', async (req, res)=>{
     // console.log(req.body);
-    const {nombre, correo, telefono, consulta} = req.body;
+    const {nombre, email, telefono, consulta} = req.body;
 
     contentHTML = `
           <h1>Informacion de Usuario: </h1>
           <ul>
           <li><b>Nombre:</b>${nombre}</li>
-          <li><b>Correo Electronico</b>:${correo}</li>
+          <li><b>Correo Electronico</b>:${email}</li>
           <li><b>Telefono:</b>${telefono}</li></br>
           </ul>
           <p style="font-size: 1rem;">Consulta:${consulta}</p>;
