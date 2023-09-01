@@ -57,7 +57,7 @@ router.post('/send-email', async (req, res)=>{
                             timerProgressBar: true,
                             showConfirmButton: false // No mostrar el botón de confirmación
                         }).then(() => {
-                            window.location.href = '/index.html'; // Redirige después del SweetAlert
+                            window.location.href = '/success.html'; // Redirige después del SweetAlert
                         });
                 </script>
                 `;
