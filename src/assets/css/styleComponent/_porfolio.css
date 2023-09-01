@@ -53,12 +53,10 @@
 /* card */
 
 .portfolio-card-box {
-    background-color: var(--color-background-2);
-    border-radius: .4rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* background-image:linear-gradient(rgb(91, 44, 111, .5), rgb(91, 44, 111, .5)); */
+    background-image: linear-gradient(to top, #051937, #123150, #234b68, #376780, #4e8397);    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);    
     padding: .5rem;
     max-width: 15rem;
+    border-radius: .4rem;
 
     width: 14rem;
     height: 18rem;
@@ -67,6 +65,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 1px 15px 1px rgba(0,0,0,0.4);
+}
+
+.portfolio-card-box:hover{
+    box-shadow: 0 1px 15px 1px rgba(0,0,0,0.6);
 }
   
 .img-card {
@@ -103,7 +106,7 @@
 
 
 .btn-github, .btn-url{
-background-color: var(--color-four);
+background-color: #dbe1e9;
   color: var(--color-background-2);
   border-radius: .3rem;
   width: 45%;
@@ -118,8 +121,8 @@ background-color: var(--color-four);
 }
 
 .btn-github:hover, .btn-url:hover{
-    background-color: #9c74be;
-    color: var(--color-four);
+    background-color: #83be74;
+    color: var(--color-background-2);
 }
 
 .link-porfolio-extend{

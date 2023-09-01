@@ -12,7 +12,7 @@
 
 .container-box-contacto{
     height: 80%;
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
 
     display: flex;
     flex-direction: column;
@@ -26,12 +26,12 @@
 .inicio-titulo{
     font-size: 2rem;
     margin-bottom: 2rem;
-    height: 20%;
+    height: 10%;
     /* border: 1px solid black; */
 }
 
 .box-contacto{
-    height: 80%;
+    height: 90%;
     /* border: 1px solid black; */
     width: 100%;
     display: flex;
@@ -45,7 +45,7 @@
 .box-contacto-datos{
     /* background-color: aquamarine; */
     width: 50%;
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items:start;
@@ -78,9 +78,9 @@
 .linkedin:hover{
     color: #0077b5;
 }
-.instagram:hover{
+/* .instagram:hover{
     color: #c13584;
-}
+} */
 
 /* form */
 .box-contacto-formulario{
@@ -93,7 +93,7 @@
     height: 80%;
 }
 .form-contacto{
-    height: 90%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -101,17 +101,16 @@
     justify-content: space-around;
     padding:  .5rem 1rem;
 
-    background-color: var(--color-background-2);
-    border-radius: .4rem;
+    background-image: linear-gradient(to top, #051937, #123150, #234b68, #376780, #4e8397);    
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     /* backdrop-filter: blur(4.7px); */
-    -webkit-backdrop-filter: blur(4.7px);
+    /* -webkit-backdrop-filter: blur(4.7px); */
 }
 
-.form-contacto > label{
+/* .form-contacto > label{
     color: var(--color-white);
     font-family: var(--ffamlily-one);
-}
+} */
 .form-contacto > input{
     background-color: var(--color-white);
     border: none;
@@ -122,6 +121,7 @@
     font-weight: 500;
     font-size: 1rem;
     text-align: left;
+    margin: .5rem 0;
 
     &:focus {
         border: none;
@@ -133,7 +133,8 @@
     border: none;
     border-radius: .2rem;
     padding-bottom: .5rem;
-    height: 3rem;
+    height: 9rem;
+    margin: .5rem 0;
 
     font-family: var(--ffamlily-one);
     font-weight: 500;
@@ -154,10 +155,11 @@
     font-family: var(--ffamlily-one);
     font-size: 1.1rem;
     font-weight: 600;
-    padding: .3rem;
-    width: 50%;
+    padding: .5rem;
+    width: 80%;
     margin: .5rem auto;
     margin: auto;
+    cursor: pointer;
 }
 
 /* Tablet */
