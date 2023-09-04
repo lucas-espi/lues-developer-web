@@ -53,7 +53,7 @@
 /* card */
 
 .portfolio-card-box {
-    background-color: #234b68;   
+    background-color:var(--color-background-2);   
     padding: .3rem;
     border-radius: .2rem;
 
@@ -171,6 +171,9 @@ background-color: var(--color-btn-primary);
 }
 /* mobile */
 @media screen and (max-width: 560px){
+    .container-porfolio{
+        height: auto;
+    }
     .container-box-porfolio{
         padding: 2rem 1rem;
     }

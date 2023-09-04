@@ -101,7 +101,7 @@
     justify-content: space-around;
     padding:  .5rem 1rem;
     border-radius: .4rem;
-    background-color: #234b68;
+    background-color: var(--color-background-2);
     /* background-image: linear-gradient(to top, #051937, #123150, #234b68, #376780, #4e8397);     */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     /* backdrop-filter: blur(4.7px); */
