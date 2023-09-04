@@ -26,8 +26,9 @@ const createCard = (array) => {
         let div = document.createElement('div');
         div.setAttribute("class", "portfolio-card-box");
         div.innerHTML +=
-            `
-            <img src="${pro.imagen}" class="img-card" alt="Previsualización del Proyecto">
+            `<div class="img-card-box">
+                <img src="${pro.imagen}" class="img-card" alt="Previsualización del Proyecto">
+            </div>
             <h2 class="h2-card">${pro.titulo}</h2>
             <p class="p-card">${pro.descripcion}</p>
             <div class="links">

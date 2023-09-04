@@ -53,13 +53,12 @@
 /* card */
 
 .portfolio-card-box {
-    background-image: linear-gradient(to top, #051937, #123150, #234b68, #376780, #4e8397);    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);    
-    padding: .5rem;
-    max-width: 15rem;
-    border-radius: .4rem;
+    background-color: #234b68;   
+    padding: .3rem;
+    border-radius: .2rem;
 
     width: 14rem;
-    height: 18rem;
+    height: 19rem;
 
     display: flex;
     flex-direction: column;
@@ -71,11 +70,17 @@
 .portfolio-card-box:hover{
     box-shadow: 0 1px 15px 1px rgba(0,0,0,0.6);
 }
-  
+.img-card-box{
+    background-color: #83be74;
+    width: 100%;
+    height: 45%;
+}
+
 .img-card {
     width: 100%;
-    border-top-left-radius: .4rem;
-    border-top-right-radius: .4rem;
+    height: 100%;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2em;
     margin-bottom: .8rem;
 }
   
@@ -87,16 +92,15 @@
 .p-card {
     font-size: 1rem;
     color: rgb(191, 194, 212);
+    text-align: center;
 }
   
 .portfolio-card-box .links {
+    /* background-color: #83be74; */
     margin-top: .4rem;
     margin-bottom: .1rem;
     width: 100%;
     max-height: 4rem;
-    
-    /* border: 1px solid black; */
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -106,7 +110,7 @@
 
 
 .btn-github, .btn-url{
-background-color: #dbe1e9;
+background-color: var(--color-btn-primary);
   color: var(--color-background-2);
   border-radius: .3rem;
   width: 45%;
@@ -121,7 +125,7 @@ background-color: #dbe1e9;
 }
 
 .btn-github:hover, .btn-url:hover{
-    background-color: #83be74;
+    background-color: var(--color-four);
     color: var(--color-background-2);
 }
 
@@ -143,15 +147,15 @@ background-color: #dbe1e9;
     }
     
     .portfolio-card-box {
-        padding: .4rem;
+        padding: .2rem;
         max-width: 13rem;
     
-        width: 13rem;
-        height: 14rem;
+        width: 14rem;
+        height: 16rem;
         margin: 1rem;
     }
     .img-card {
-        margin-bottom: .3rem;
+        margin-bottom: .2rem;
     }
       
     .h2-card {
@@ -159,7 +163,7 @@ background-color: #dbe1e9;
     }
       
     .p-card {
-        font-size: .8rem;
+        font-size: .9rem;
     }
     .link-porfolio-extend{
         font-size: 1.4rem;
@@ -168,20 +172,16 @@ background-color: #dbe1e9;
 /* mobile */
 @media screen and (max-width: 560px){
     .container-box-porfolio{
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     }
     .p-porfolio{
         height: 8%;
         text-align: left;
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .box-porfolio{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-        /* background-color: aqua; */
-        
+        flex-direction: column;        
         height: 80%;
     }
     .inicio-titulo-porfolio{
@@ -189,46 +189,48 @@ background-color: #dbe1e9;
         height: 5%;
     }
     .portfolio-card-box {
-        border-radius: .3rem;
-        padding: .3rem;
-        height: 8rem;
-        width: 15rem;
+        border-radius: .1rem;
+        padding: .1rem;
+        height: 10rem;
+        width: 17rem;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         margin:.3rem;
-
         display: flex;
         flex-direction: column;
     }
-
+    .img-card-box{
+        /* background-color: #83be74; */
+        width: 100%;
+        height: 55%;
+    }
     .img-card {
-        margin-bottom: 0rem;
-        width: 85%;
-        height: 45%;
-        object-fit: cover center center;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover center center; */
         border-radius: 0;
     }
       
     .h2-card {
-        font-size: .9rem;
+        font-size: 1.1rem;
     }
       
     .p-card {
-        font-size: .7rem;
-        /* display: none; */
+        /* font-size: .7rem; */
+        display: none;
     }
 
     .portfolio-card-box .links {
         margin-top: .2rem;
         margin-bottom: .1rem;
-        width: 90%;
-        max-height: 1.5rem;      
+        width: 100%;
+        height: 1.8rem;      
         /* border: 1px solid black; */
     }
 
     .btn-github, .btn-url{
         border-radius: .2rem;
-        width: 35%;
+        width: 48%;
         height: 100%;
         padding: .2rem;
         font-size: .8rem;
