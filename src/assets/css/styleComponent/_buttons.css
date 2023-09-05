@@ -16,6 +16,9 @@
 
     margin-top: 1rem;
 }
+.download-cv > button:hover{
+    box-shadow: 0 5px 11px 1px rgba(0,0,0,0.2);
+}
 
 .download-cv > button:active{
     translate: -2px 3px;

@@ -1,31 +1,3 @@
-/* 
-:root{
-    --color-one: #2980B9;
-    --color-two: #8F65B1;
-    --color-three: #3B4856;
-    --color-four: #91D465;
-    --color-five: #28B463;
-
-    --color-one-2: #808B96;
-    --color-two-2: #5B2C6F;
-    --color-three-2: #CB4335;
-
-    --color-background-1: #F7F9F9 ;
-    --color-background-2: #283747;
-
-    --color-white: #F0F3F4;
-    --color-black: #212F3D;
-
-    --ffamlily-one: 'Roboto', sans-serif;
-    --ffamlily-two: 'Roboto Mono', monospace;
-    --ffamlily-three: Arial, Helvetica, sans-serif;
-}
-*/
-
-/* 
-@media  screen and (min-width: 767px) and (max-width: 1023px) {}
-@media screen and (min-width: 766px){}
-*/
 
 .container-sobre-mi{
     background-color: var(--color-white);
@@ -34,19 +6,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     height:100%;
 }
 
 .container-box-sobre-mi{
-    height: 80%;
+    height: 70%;
     padding: 6rem 2rem;
 
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-around;
+    align-items:start;
+    justify-content: space-evenly;
 
     .inicio-titulo{
         font-size: 2rem;
@@ -55,7 +27,7 @@
 }
 
 .box-skills{
-    height: 20%;
+    height: 30%;
 }
 .box-skills > i{
     color: var(--color-background-2);
