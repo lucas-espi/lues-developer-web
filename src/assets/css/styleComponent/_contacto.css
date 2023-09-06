@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     height:100%;
 }
 
@@ -20,8 +20,6 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-
-    /* background-color: aqua; */
     width: 100%;
 }
 
@@ -29,12 +27,11 @@
     font-size: 2rem;
     margin-bottom: 2rem;
     height: 10%;
-    /* border: 1px solid black; */
+    color: var(--color-background-2);
 }
 
 .box-contacto{
     height: 90%;
-    /* border: 1px solid black; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -45,7 +42,6 @@
 }
 
 .box-contacto-datos{
-    /* background-color: aquamarine; */
     width: 50%;
     height: 90%;
     display: flex;
@@ -54,14 +50,8 @@
     justify-content: space-evenly;
     padding-left: 2rem;
 }
-
-/* .subtitle-contacto{
-    font-size: 1.8rem;
-    height: 10%;
-    display: none;
-} */
 .p-cont{
-    color: var(--color-background-2);
+    color: var(--color-black);
     font-size: 1.3rem;
 }
 .a-contac{
@@ -69,7 +59,7 @@
     font-size: 1.3rem;
     font-family: var(--ffamlily-one);
     font-weight: 500;
-    color: var(--color-background-2);
+    color: var(--color-black);
 }
 .gmail:hover{
     color: #ea4335;
@@ -91,7 +81,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* border: #0077b5 solid 2px; */
     height: 80%;
 }
 .form-contacto{
@@ -103,19 +92,12 @@
     justify-content: space-around;
     padding:  .5rem 1rem;
     border-radius: .4rem;
-    background-color: var(--color-background-2);
-    /* background-image: linear-gradient(to top, #051937, #123150, #234b68, #376780, #4e8397);     */
+    background-color: var(--color-card);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    /* backdrop-filter: blur(4.7px); */
-    /* -webkit-backdrop-filter: blur(4.7px); */
 }
 
-/* .form-contacto > label{
-    color: var(--color-white);
-    font-family: var(--ffamlily-one);
-} */
 .form-contacto > input{
-    background-color: var(--color-white);
+    background-color: var(--color-one-2);
     border: none;
     border-radius: .2rem;
     height: 2rem;
@@ -132,7 +114,7 @@
     }
 }
 .form-contacto > textarea{
-    background-color: var(--color-white);
+    background-color: var(--color-one-2);
     border: none;
     border-radius: .2rem;
     padding-bottom: .5rem;
@@ -154,7 +136,7 @@
     border: none;
     border-radius: .2rem;
     background-color: var(--color-five);
-    color: var(--color-white);
+    color: #F0F3F4;
     font-family: var(--ffamlily-one);
     font-size: 1.1rem;
     font-weight: 600;

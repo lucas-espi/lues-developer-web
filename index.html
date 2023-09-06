@@ -12,6 +12,7 @@
 
      <!-- link js -->
      <script defer src="/src/assets/js/app.js"></script>
+     <script defer src="/src/assets/js/funcionalidades.js"></script>
      <!-- Fontawesome -->  
      <link rel="stylesheet" href="./src/assets/iconos-fontawesome/css/all.min.css">
 
@@ -39,19 +40,27 @@
 
                     <ul class="header-nav">
                         <li class="header-nav-li">
-                            <a class="li-link" href="#up-inicio">Inicio</a>
+                            <a class="li-link" href="#up-inicio"  data-section="inicio">Inicio</a>
                         </li>
                         <li class="header-nav-li">
-                            <a class="li-link" href="#sobre-mi">Sobre mi</a>
+                            <a class="li-link" href="#sobre-mi" data-section="sobre-mi">Sobre mi</a>
                         </li>
                         <li class="header-nav-li">
-                            <a class="li-link" href="#porfolio">Porfolio</a>
+                            <a class="li-link" href="#porfolio" data-section="porfolio">Porfolio</a>
                         </li>
                         <li class="header-nav-li contacto">
-                            <a class="li-link" href="#contacto">Contacto</a>
+                            <a class="li-link" href="#contacto" data-section="contacto">Contacto</a>
                         </li>
+                        
+                        <button id="toggle-mode" class="toggle-mode">
+                            <i class="fa-regular fa-moon"></i>
+                        </button>
+                        
+
                     </ul>
                 </nav>
+
+                
         </header>
         <section class="container-inicio inicio " id="inicio ">
             <div class="container-box-inicio" id="up-inicio">
@@ -85,7 +94,7 @@
         </section>
         <section class="container-sobre-mi " id="sobre-mi">
             <div class="container-box-sobre-mi">
-                <h1 class="inicio-titulo">SOBRE MI</h1>
+                <h1 class="inicio-titulo">SOBRE MÍ</h1>
                 <p class="text-medio">
                     Desde chico fui curioso por el mundo informático y el diseño de ilustraciones, combinando estas actitudes termine encontrando una nueva
                      orientación el “Desarrollo Web”, desde su diseño hasta  la implementación en código <i class="fa-solid fa-code"></i> para 
@@ -117,7 +126,7 @@
         <section class="container-porfolio" id="porfolio">
             <div class="container-box-porfolio">
                 <h1 class="inicio-titulo-porfolio">PORFOLIO</h1>
-                <p class="p-porfolio">Aquí encontrarás una muestra de mis proyectos destacados, desde diseño 
+                <p class="text-medio">Aquí encontrarás una muestra de mis proyectos destacados, desde diseño 
                     hasta desarrollo web. Permitete explorarlos para descubrir un poco de mi trabajo.</p>
 
                 <div class="box-porfolio" id="box-porfolio">    
@@ -146,16 +155,13 @@
                         <!-- desarrollar form -->
                         <!-- <h2 class="subtitle-contacto formulario">Formulario <i class="fa-solid fa-arrow-down"></i> </h2> -->
                         <form class="form-contacto" action="/send-email" method="POST">
-                            <!-- <label for="nombre" >Nombre:</label> -->
+                           
                             <input type="text" id="nombre" name="nombre" placeholder="  Nombre y Apellido" required>
-            
-                            <!-- <label for="email">Email:</label> -->
-                            <input type="email" id="email" name="email" placeholder="  ejemplo@gmail.com" required>
-            
-                            <!-- <label for="telefono">Teléfono:</label> -->
+                            
+                            <input type="email" id="email" name="email" placeholder="  ejemplo@gmail.com" required>            
+                            
                             <input type="tel" id="telefono" name="telefono" placeholder="  011-12345678">
-            
-                            <!-- <label for="consulta">Consulta:</label> -->
+        
                             <textarea id="consulta" name="consulta" placeholder="  Escriba su mensaje..." rows="4" required></textarea>
             
                             <button type="submit">Enviar</button>
@@ -168,7 +174,7 @@
             <div class="container-box-footer">
                 
                     <p>Copyright  &#169 2023 Diseñado y desarrollado por Lucas Espindola</p>
-                    <button>
+                    <button id="scroll-up-button">
                         <a href="#up-inicio">Up <i class="fa-solid fa-angles-up"></i></a>
                     </button>
                 

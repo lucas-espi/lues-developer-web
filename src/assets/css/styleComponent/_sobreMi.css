@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     height:100%;
 }
 
@@ -23,6 +23,7 @@
     .inicio-titulo{
         font-size: 2rem;
         margin-bottom: 2rem;
+        color: var(--color-background-2);
     }
 }
 
@@ -30,14 +31,16 @@
     height: 30%;
 }
 .box-skills > i{
-    color: var(--color-background-2);
+    color: var(--color-card);
     height: 100%;
     width: auto;
 
     font-size: 2.3rem;
     margin: 0 1rem;
 }
-
+.text-medio > a {
+    color: var(--color-one);
+}
 /* Tablet */
 @media  screen and (min-width: 767px) and (max-width: 1023px) {
     .container-box-sobre-mi{
