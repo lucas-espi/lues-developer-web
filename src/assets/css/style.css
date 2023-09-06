@@ -6,6 +6,7 @@
 @import url(./styleComponent/_contacto.css);
 @import url(./styleComponent/_footer.css);
 @import url(./styleComponent/_buttons.css);
+@import url(./styleComponent/_funcion.css);
 /* Import fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@100;300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* font-family: 'Roboto', sans-serif; */
@@ -13,21 +14,29 @@
 /* font-family: 'Roboto Mono', monospace; */
 
 :root{
-    --color-one: #2980B9;
-    --color-two: #8F65B1;
-    --color-three: #3B4856;
-    --color-four: #91D465;
-    --color-five: #28B463;
-
-    --color-one-2: #808B96;
-    --color-two-2: #5B2C6F;
-    --color-three-2: #CB4335;
 
     --color-background-1: #F7F9F9 ;
     --color-background-2: #283747;
 
     --color-white: #F0F3F4;
     --color-black: #212F3D;
+
+    --color-card: #85929E;
+
+
+    --color-one: #2980B9;
+    --color-two: #8F65B1;
+    --color-three: #3B4856;
+    --color-four: #91D465;
+    --color-five: #28B463;
+
+    --color-one-2: #EAEDED;
+    --color-two-2: #5B2C6F;
+    --color-three-2: #CB4335;
+
+    
+
+    
 
     --color-btn-primary: #dbe1e9;
 
@@ -41,6 +50,7 @@
     padding: 0;
     box-sizing: border-box;
 };
+html{}
 
 body{
     width: 100%;

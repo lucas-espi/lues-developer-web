@@ -1,0 +1,43 @@
+/* Estilo predeterminado para los enlaces del menú */
+.header-nav .li-link {
+    /* color: #333; Color normal */
+    transition: color 0.1s; /* Transición suave */
+}
+
+/* Estilo para los enlaces activos (hover) */
+.header-nav .li-link.active {
+    color: #005db4; /* Color cuando la sección está activa */
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.toggle-mode {
+    margin: 0.2rem 1rem;
+    cursor: pointer;
+    padding: 0.15rem .15rem;
+    border: solid 2px var(--color-black);
+    border-radius: .7rem; 
+    color: var(--color-black);
+    background-color: transparent;
+}
+.fa-sun {
+    color:#F7DC6F ;
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Estilos para el modo claro */
+body.light-mode {
+    background-color: var(--color-background-1);
+    /* color: var(--color-text-light); */
+    /* ... Define otros estilos para el modo claro ... */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: var(--color-background-2);
+    /* color: var(--color-text-dark); */
+    /* ... Define otros estilos para el modo oscuro ... */
+}
