@@ -41,3 +41,15 @@ const createCard = (array) => {
 };
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuInput = document.querySelector(".menu-input");
+    const menuLinks = mobileMenu.querySelectorAll(".li-link");
+
+    menuLinks.forEach(function (link) {
+        link.addEventListener("click", ()=> {
+            menuInput.checked = false; // Cierra el menú al hacer clic en un enlace
+        });
+    });
+});
+
