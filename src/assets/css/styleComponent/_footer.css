@@ -27,7 +27,7 @@
 }
 
 .container-box-footer > button{
-    background-color: var(--color-black);
+    background-color: var(--color-btn-cv); 
     height: 2rem;
     width: 3rem;
     border-radius: .4rem;

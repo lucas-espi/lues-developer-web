@@ -21,7 +21,7 @@
     --color-white: #F0F3F4;
     --color-black: #212F3D;
 
-    --color-card: #85929E;
+    --color-card:#405b72;
 
 
     --color-one: #2980B9;
@@ -34,9 +34,8 @@
     --color-two-2: #5B2C6F;
     --color-three-2: #CB4335;
 
-    
-
-    
+    --color-maquina:#CB4335;
+    --color-btn-cv: #212F3D;  
 
     --color-btn-primary: #dbe1e9;
 
@@ -50,13 +49,16 @@
     padding: 0;
     box-sizing: border-box;
 };
-html{}
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     width: 100%;
     height: 100vh;
-    background-color: var(--color-background-1);
-   
+    background-color: var(--color-background-1);   
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
 }
 #container{
     max-width: 1440px;

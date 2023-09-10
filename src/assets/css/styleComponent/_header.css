@@ -28,7 +28,6 @@
     align-items: center;
     flex-direction:row;
 }
-
 .header-logo > a{
     text-decoration: none;
     color: var(--color-black);
@@ -55,12 +54,11 @@
 }
 
 .li-link:hover{
-    color: var(--color-one);
     transition: .05s;
-    /* border-bottom: var(--color-one) solid 2px; */
+    border-bottom: var(--color-black) solid 2px;
 }
 .li-link:first-child:hover, .li-link:nth-child(2):hover, .li-link:nth-child(3):hover{
-    border-bottom: var(--color-one) solid 2px;
+    border-bottom:  solid 2px;
 }
 
 .contacto{
@@ -72,7 +70,7 @@
     background-color:var(--color-black);
     cursor: pointer;
     transition: .2s;
-    border-bottom: var(--color-one) solid 0px;
+    border-bottom: none;
 }
 .contacto:hover > a{
     color: var(--color-white);

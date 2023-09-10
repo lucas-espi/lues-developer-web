@@ -4,10 +4,13 @@ const toggleButton = document.getElementById('toggle-mode');
 const body = document.body;
 //  Obtengo el elemento :root
 const rootElement = document.documentElement;
-// Variable para realizar un seguimiento del estado actual (light o dark)
-let isDarkMode = false;
 
-toggleButton.addEventListener('click', () => {
+
+// Variable para realizar un seguimiento del estado actual (light o dark)
+let isDarkMode = localStorage.getItem('isDarkMode') === 'false';
+
+
+function toggleMode() {
     // body.classList.toggle('light-mode');
     // body.classList.toggle('dark-mode');
 
@@ -17,17 +20,32 @@ toggleButton.addEventListener('click', () => {
       rootElement.style.setProperty('--color-background-2', '#283747');
       rootElement.style.setProperty('--color-white', '#F0F3F4');
       rootElement.style.setProperty('--color-black', '#212F3D');
+      rootElement.style.setProperty('--color-maquina', '#CB4335');
+      rootElement.style.setProperty('--color-btn-cv', '#212F3D');
+      rootElement.style.setProperty('--color-card', '#405b72');
     } else {
       rootElement.style.setProperty('--color-background-1', '#283747');
       rootElement.style.setProperty('--color-background-2', '#F7F9F9');
       rootElement.style.setProperty('--color-white', '#212F3D');
       rootElement.style.setProperty('--color-black', '#F0F3F4');
+      rootElement.style.setProperty('--color-maquina', '#90D87D');
+      rootElement.style.setProperty('--color-btn-cv', '#90D87D');
+      rootElement.style.setProperty('--color-card', '#546584');
     }
   
     // Invierte el estado
     isDarkMode = !isDarkMode;
 
-});
+    // Guarda el estado en localStorage
+    localStorage.setItem('isDarkMode', isDarkMode);
+};
+
+    // Agrega un controlador de eventos para el clic en el botón
+    toggleButton.addEventListener('click', toggleMode);
+
+   // Aplica el modo inicial al cargar la página
+   toggleMode();
+
 
 // -----------------------------------------------------------------------------------------
 
