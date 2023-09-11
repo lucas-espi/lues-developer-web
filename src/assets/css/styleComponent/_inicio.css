@@ -1,5 +1,6 @@
 
 .container-inicio{
+    margin: auto;
     background-color: var(--color-white);
     margin-top: 4.8rem;
     border-radius: .3rem;
@@ -8,7 +9,7 @@
     justify-content: center;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     height: 100vh; 
-    scroll-snap-align: start; 
+    max-width: 1440px;
 }
 .container-box-inicio{
     display: flex;
@@ -76,11 +77,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 2rem;
 }
 
 .icon-redes > a > i{
-    color: var(--color-black);
+    color: var(--color-card);
     font-size: 1.7rem;
     margin: 0 1rem;
 }
