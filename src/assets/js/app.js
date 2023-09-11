@@ -30,7 +30,6 @@ const createCard = (array) => {
                 <img src="${pro.imagen}" class="img-card" alt="Previsualización del Proyecto">
             </div>
             <h2 class="h2-card">${pro.titulo}</h2>
-            <p class="p-card">${pro.descripcion}</p>
             <div class="links">
                 <a href="${pro.urlProyecto}" class="btn-url" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar</a>
                 <a href="${pro.urlGithub}" class="btn-github" target="_blank"> <i class="fa-brands fa-github"></i>GitHub</a>
