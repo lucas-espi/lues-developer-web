@@ -1,14 +1,15 @@
 
-
 .container-inicio{
+    margin: auto;
     background-color: var(--color-white);
     margin-top: 4.8rem;
     border-radius: .3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    height: 100vh; 
+    max-width: 1440px;
 }
 .container-box-inicio{
     display: flex;
@@ -22,6 +23,7 @@
     align-items: start;
     padding-left: 2rem;
     width: 50%;
+    justify-content: center;
 }
 .text-bienvenidos{
     font-size: 1.8rem;
@@ -34,7 +36,7 @@
     font-family: monospace;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--color-three-2);
+    color: var(--color-maquina);
 
     border-right: 4px solid;
     width: 5ch;
@@ -75,11 +77,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 2rem;
 }
 
 .icon-redes > a > i{
-    color: var(--color-black);
+    color: var(--color-card);
     font-size: 1.7rem;
     margin: 0 1rem;
 }
