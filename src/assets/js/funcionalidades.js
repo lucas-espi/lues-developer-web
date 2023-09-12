@@ -48,7 +48,7 @@ function toggleMode() {
 
 
 // -----------------------------------------------------------------------------------------
-
+// cambios en modo dark / light
 document.addEventListener("DOMContentLoaded", function () {
     const toggleModeButton = document.getElementById("toggle-mode");
     const moonIcon = toggleModeButton.querySelector(".fa-moon");
@@ -73,3 +73,5 @@ document.addEventListener("DOMContentLoaded", function () {
         isMoonMode = !isMoonMode;
     });
 });
+
+// ---------------------------------------------------------------------------------------
