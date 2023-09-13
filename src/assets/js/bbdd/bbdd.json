@@ -2,21 +2,21 @@
 [
     {
         "titulo": "Eureka Artesanal",
-        "imagen": "/src/public/img/eureka-logo.png",
+        "imagen": "/src/public/img/eureka-logo2.png",
         "descripcion": "Pagina de manualidades artezanales de pintura y costura.",
         "urlProyecto": "https://lucas-espi.github.io/Proyecto_final-Eureka/",
         "urlGithub": "https://github.com/lucas-espi/Proyecto_final-Eureka"
     },
     {
         "titulo": "Camino Aventura",
-        "imagen": "/src/public/img/ca.png",
+        "imagen": "/src/public/img/ca2.png",
         "descripcion": "Ecommerce proyecto final curso de JavaScript.",
         "urlProyecto": "https://lucas-espi.github.io/ProyectoFinal-JS/",
         "urlGithub": "https://github.com/lucas-espi/ProyectoFinal-JS"
     },
     {
         "titulo": "Camino Aventura II",
-        "imagen": "/src/public/img/ca-II.png",
+        "imagen": "/src/public/img/ca-ll2.png",
         "descripcion": "Ecommerce proyecto final curso de React.js.",
         "urlProyecto": "https://camino-aventura.netlify.app",
         "urlGithub": "https://github.com/lucas-espi/Camino-Aventura-React"
