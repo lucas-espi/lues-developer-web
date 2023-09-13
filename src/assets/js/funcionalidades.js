@@ -23,14 +23,16 @@ function toggleMode() {
       rootElement.style.setProperty('--color-maquina', '#CB4335');
       rootElement.style.setProperty('--color-btn-cv', '#212F3D');
       rootElement.style.setProperty('--color-card', '#405b72');
+      rootElement.style.setProperty('--color-btn-card', '#AABD8C');
     } else {
       rootElement.style.setProperty('--color-background-1', '#283747');
       rootElement.style.setProperty('--color-background-2', '#F7F9F9');
       rootElement.style.setProperty('--color-white', '#212F3D');
       rootElement.style.setProperty('--color-black', '#F0F3F4');
-      rootElement.style.setProperty('--color-maquina', '#90D87D');
-      rootElement.style.setProperty('--color-btn-cv', '#90D87D');
+      rootElement.style.setProperty('--color-maquina', '#C5E6A6');
+      rootElement.style.setProperty('--color-btn-cv', '#C5E6A6');
       rootElement.style.setProperty('--color-card', '#546584');
+      rootElement.style.setProperty('--color-btn-card', '#C5E6A6');
     }
   
     // Invierte el estado
