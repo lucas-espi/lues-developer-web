@@ -53,9 +53,9 @@
 }
 .text-medio{
     margin-bottom: 2rem;
-    font-family: var(--ffamlily-two);
-    font-size: 1rem;
-    font-weight: 400;
+    font-family: var(--ffamlily-one);
+    font-size: 1.2rem;
+    font-weight: 300;
     color: var(--color-black);
 }
 
@@ -120,7 +120,8 @@
     }
     .text-medio{
         margin-bottom: 1rem;
-        font-size: .8rem;
+        font-size: 1rem;
+        font-weight: 200;
     }
 
     .box-inicio-ilustaracion{
