@@ -5,17 +5,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $telefono = $_POST['telefono'];
     $consultaTexto = $_POST['consulta'];
 
-    $consulta = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-    $consulta .= "Su email es: " . $email . "\r\n";
-    $consulta .= "Su telefono es: " . $telefono . "\r\n";
-    $consulta .= "Consulta: " . $consultaTexto . "\r\n";
-    $consulta .= "Enviado el " . date('d/m/y', time());
+    // Estructura HTML del mensaje
+    $consulta = "<html><body>";
+    $consulta .= "<p>Enviado por: <strong>$nombre</strong>,</p><br>";
+    $consulta .= "<p>Su email: <a href='mailto:$email'>$email</a></p><br>";
+    $consulta .= "<p>Su teléfono: $telefono</p><br>";
+    $consulta .= "<p>Mensaje: $consultaTexto</p><br>";
+    $consulta .= "<p>Enviado el: " . date('d/m/y', time()) . "</p><br>";
+    $consulta .= "</body></html>";
 
-    $para = 'lucasare94@gmail.com';
-    $asunto = 'Este email fue enviado desde Porfolio Lucas Espindola';
-    $header = "From: $email\r\n" . "Reply-To: $email\r\n";
+    $para = 'lues.dw@gmail.com';
+    $asunto = 'Este email fue enviado desde luesdw.com.ar';
 
-    if (mail($para, $asunto, utf8_decode($consulta), $header)) {
+    // Encabezado para enviar un correo HTML
+    $header = "From: $email\r\n";
+    $header .= "Reply-To: $email\r\n";
+    $header .= "MIME-Version: 1.0\r\n";
+    $header .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+    if (mail($para, $asunto, $consulta, $header)) {
         header('Location: /success.html');
         exit;
     } else {

@@ -27,7 +27,9 @@ const createCard = (array) => {
         div.setAttribute("class", "portfolio-card-box");
         div.innerHTML +=
             `<div class="img-card-box">
-                <img src="${pro.imagen}" class="img-card" alt="Previsualización del Proyecto">
+                <a href="${pro.urlProyecto}" target="_blank">
+                    <img src="${pro.imagen}" class="img-card" alt="Previsualización del Proyecto">
+                </a>
             </div>
             <h2 class="h2-card">${pro.titulo}</h2>
             <div class="links">

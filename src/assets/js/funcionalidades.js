@@ -7,7 +7,7 @@ const rootElement = document.documentElement;
 
 
 // Variable para realizar un seguimiento del estado actual (light o dark)
-let isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+let isDarkMode = localStorage.getItem('isDarkMode') === 'false';
 
 
 function toggleMode() {
