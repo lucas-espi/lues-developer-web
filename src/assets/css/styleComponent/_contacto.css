@@ -99,10 +99,11 @@
 
 .form-contacto > input{
     background-color: var(--color-one-2);
+    color: #3B4856;
     border: none;
     border-radius: .2rem;
     height: 2rem;
-    padding-bottom: .3rem;
+    padding-left: .4rem;
     font-family: var(--ffamlily-one);
     font-weight: 500;
     font-size: 1rem;
@@ -113,12 +114,16 @@
         border: none;
         outline: none;
     }
+    &:active{
+        color: #3B4856;
+    }
 }
 .form-contacto > textarea{
     background-color: var(--color-one-2);
     border: none;
     border-radius: .2rem;
-    padding-bottom: .5rem;
+    padding-left: .4rem;
+    padding-top: .4rem;
     height: 9rem;
     margin: .5rem 0;
 
@@ -130,6 +135,9 @@
     &:focus {
         border: none;
         outline: none;
+    }
+    &:active{
+        color: #3B4856;
     }
 }
 
@@ -146,35 +154,6 @@
     margin: .5rem auto;
     margin: auto;
     cursor: pointer;
-}
-
-/* Cambiar el color del texto que el usuario escribe en los campos de entrada */
-.form-contacto input[type="text"],
-.form-contacto input[type="email"],
-.form-contacto input[type="tel"],
-.form-contacto textarea {
-  color: var(--color-three); /* Cambia esto al color que desees */
-}
-
-/* Puedes ajustar el color para cada tipo de campo si es necesario */
-.form-contacto input[type="text"] {
-    color: var(--color-three);
-    padding-left: .4rem;
-}
-
-.form-contacto input[type="email"] {
-    color: var(--color-three);
-    padding-left: .4rem;
-}
-
-.form-contacto input[type="tel"] {
-    color: var(--color-three);
-    padding-left: .4rem;
-}
-
-.form-contacto textarea {
-    color: var(--color-three);
-    padding-left: .4rem;
 }
 
 /* Tablet */
