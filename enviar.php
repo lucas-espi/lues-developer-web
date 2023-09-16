@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $header = "From: $email\r\n" . "Reply-To: $email\r\n";
 
     if (mail($para, $asunto, utf8_decode($consulta), $header)) {
-        header('Location: /src/public/pages/success.html');
+        header('Location: /success.html');
         exit;
     } else {
         echo "Hubo un problema al enviar el correo.";
