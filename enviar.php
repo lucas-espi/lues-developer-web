@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $consultaTexto = $_POST['consulta'];
 
     // Estructura HTML del mensaje
-    $consulta = "<html><body>";
-    $consulta .= "<p>Enviado por: <strong>$nombre</strong>,</p><br>";
+    $consulta = "<html><body style='background-image: linear-gradient(to top, #7ea2da, #97b3df, #afc4e4, #c8d6e9, #e2e7ee);'>";
+    $consulta .= "<p>Enviado por: <b>$nombre</b>,</p><br>";
     $consulta .= "<p>Su email: <a href='mailto:$email'>$email</a></p><br>";
     $consulta .= "<p>Su teléfono: $telefono</p><br>";
     $consulta .= "<p>Mensaje: $consultaTexto</p><br>";
