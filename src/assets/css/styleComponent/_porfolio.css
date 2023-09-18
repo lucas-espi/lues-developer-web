@@ -121,6 +121,7 @@ background-color: var(--color-btn-card);
 }
 .link-porfolio-extend:hover{
     color: var(--color-one);
+    transition: .3s;
 }
 
 /* Tablet */

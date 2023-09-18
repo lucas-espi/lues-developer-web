@@ -32,7 +32,7 @@
     background-color: var(--color-btn-cv); 
     height: 2rem;
     width: 3rem;
-    border: none;
+    border: none 0px;
     border-radius: .4rem;
 }
 

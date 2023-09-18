@@ -99,7 +99,7 @@
 
 .form-contacto > input{
     background-color: var(--color-one-2);
-    color: #3B4856;
+    color: #556679;
     border: none;
     border-radius: .2rem;
     height: 2rem;
@@ -109,43 +109,35 @@
     font-size: 1rem;
     text-align: left;
     margin: .5rem 0;
-
-    &:focus {
-        border: none;
-        outline: none;
-    }
-    &:active{
-        color: #3B4856;
-    }
+}
+.form-contacto > input:focus{
+    border: none;
+    outline: none;
 }
 .form-contacto > textarea{
     background-color: var(--color-one-2);
+    color: #556679;
     border: none;
     border-radius: .2rem;
     padding-left: .4rem;
     padding-top: .4rem;
     height: 9rem;
     margin: .5rem 0;
-
     font-family: var(--ffamlily-one);
     font-weight: 500;
     font-size: 1rem;
     text-align: left;
-
-    &:focus {
-        border: none;
-        outline: none;
-    }
-    &:active{
-        color: #3B4856;
-    }
+}
+.form-contacto > textarea:focus{
+    border: none;
+    outline: none;
 }
 
 .form-contacto button{
     border: none;
     border-radius: .2rem;
-    background-color: var(--color-five);
-    color: #F0F3F4;
+    background-color: #C5E6A6;
+    color: #556679;
     font-family: var(--ffamlily-one);
     font-size: 1.1rem;
     font-weight: 600;
@@ -155,6 +147,11 @@
     margin: auto;
     cursor: pointer;
 }
+.form-contacto button:hover{
+    transition: .3s;
+    background-color: #daf5c2;
+
+}
 
 /* Tablet */
 @media  screen and (min-width: 767px) and (max-width: 1023px) {
@@ -163,8 +160,6 @@
     }
     .form-contacto{
         height: 90%;
-    
-       
         width: 80%;
         justify-content: space-around;
         padding:  .5rem 1rem;
