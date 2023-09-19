@@ -37,7 +37,7 @@
     color: var(--color-black);
     font-size: 1.3rem;
     font-weight: bold;
-    font-family: monospace;
+    font-family: var(--ffamlily-two);
 }
 .header-nav{
     display: flex;

@@ -1,3 +1,23 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+html{
+    font-family:'Roboto Condensed', sans-serif;
+}
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.data-personal{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.data-mensaje{
+    font-size: 1rem;
+    font-weight: 400;   
+}
+</style>
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -33,24 +53,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 
 ?>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-html{
-    font-family:'Roboto Condensed', sans-serif;
-    background-image: linear-gradient(to left bottom, #d7dbdd, #b4d2d8, #8fc9c8, #72bfac, #66b387);
-}
-body{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.data-personal{
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-.data-mensaje{
-    font-size: 1rem;
-    font-weight: 400;   
-}
-</style>
