@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $consulta .= "</body></html>";
 
     $para = 'lues.dw@gmail.com';
-    $asunto = '<b>Este email fue enviado desde luesdw.com.ar</b>';
+    $asunto = 'Este email fue enviado desde luesdw.com.ar';
 
     // Encabezado para enviar un correo HTML
     $header = "From: $email\r\n";
