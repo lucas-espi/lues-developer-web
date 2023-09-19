@@ -1,4 +1,5 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
@@ -6,16 +7,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $consultaTexto = $_POST['consulta'];
 
     // Estructura HTML del mensaje
-    $consulta = "<html><body style='background-image: linear-gradient(to top, #7ea2da, #97b3df, #afc4e4, #c8d6e9, #e2e7ee);'>";
-    $consulta .= "<p>Enviado por: <b>$nombre</b>,</p><br>";
-    $consulta .= "<p>Su email: <a href='mailto:$email'>$email</a></p><br>";
-    $consulta .= "<p>Su teléfono: $telefono</p><br>";
-    $consulta .= "<p>Mensaje: $consultaTexto</p><br>";
-    $consulta .= "<p>Enviado el: " . date('d/m/y', time()) . "</p><br>";
+    $consulta = "<html><body >";
+    $consulta .= "<p class='data-personal'>Enviado por: <b>$nombre</b>,</p><br>";
+    $consulta .= "<p class='data-personal'>Su email: <a href='mailto:$email'>$email</a></p><br>";
+    $consulta .= "<p class='data-personal'>Su teléfono: $telefono</p><br>";
+    $consulta .= "<p class='data-mensaje'>Mensaje: $consultaTexto</p><br>";
+    $consulta .= "<p class='data-mensaje'>Enviado el: " . date('d/m/y', time()) . "</p><br>";
     $consulta .= "</body></html>";
 
     $para = 'lues.dw@gmail.com';
-    $asunto = 'Este email fue enviado desde luesdw.com.ar';
+    $asunto = '<b>Este email fue enviado desde luesdw.com.ar</b>';
 
     // Encabezado para enviar un correo HTML
     $header = "From: $email\r\n";
@@ -30,4 +31,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Hubo un problema al enviar el correo.";
     }
 }
+
 ?>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+html{
+    font-family:'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(to left bottom, #d7dbdd, #b4d2d8, #8fc9c8, #72bfac, #66b387);
+}
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.data-personal{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.data-mensaje{
+    font-size: 1rem;
+    font-weight: 400;   
+}
+</style>

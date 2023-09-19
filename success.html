@@ -20,13 +20,99 @@
     <link rel="shortcut icon" href="./src/public/img/enviado-blue.png" type="image/x-icon">
     <title>success</title>
 </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@100;300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+:root{
+    --ffamlily-one: 'Roboto', sans-serif;
+    --color-black: #212F3D;
+    --color-three: #3B4856;
+}
+
+    #container-success{
+    font-family:var( --ffamlily-one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle, #f7f7f9, #f5f5f8, #f3f3f7, #f1f2f6, #eff0f5, #eceef4, #eaecf2, #e7eaf1, #e3e7ef, #dfe3ed, #dbe0eb, #d7dde9);
+}
+
+#container-success > img{
+    width:16rem ;
+}
+
+.title-succes{
+    font-size: 3.75rem;
+    color: var(--color-black);
+}
+
+.subtitle-succes{
+    font-size: 1.87rem;
+    color: var(--color-three);
+}
+
+.icon-success{
+    font-size: 1.5rem;
+    color: var(--color-three);
+    text-align: center;
+}
+
+@media  screen and (min-width: 767px) and (max-width: 1023px) {
+    #container-success{
+        background-image: none;
+    }
+
+    #container-success > img{
+        width:14rem ;
+    }
+    
+    .title-succes{
+        font-size: 2.75rem;
+        color: var(--color-black);
+    }
+    
+    .subtitle-succes{
+        font-size: 1.37rem;
+        color: var(--color-three);
+    }
+    
+    .icon-success{
+        font-size: 1.5rem;
+        color: var(--color-three);
+    }
+}
+
+@media screen and (max-width: 766px){
+    #container-success > img{
+        width:9rem ;
+    }
+    
+    .title-succes{
+        font-size: 1.67rem;
+        color: var(--color-black);
+    }
+    
+    .subtitle-succes{
+        font-size: .9rem;
+        color: var(--color-three);
+    }
+    
+    .icon-success{
+        font-size: .9rem;
+        color: var(--color-three);
+    }
+}
+</style>
 
 <body id="container-success">
 
     <div class="box-succes">
             <img src="./src/public/img/enviado-sobre.png"  alt="enviado">
             <h1 class="title-succes">ENVIADO CON EXITO</h1>
-            <h2 class="subtitle-succes">Le responderemos a su casilla de correo</h2>
+            <h2 class="subtitle-succes">Le responderemos a su casilla de correo.</h2>
             <i class=" icon-success fa-solid fa-reply"></i>
     </div>
 
