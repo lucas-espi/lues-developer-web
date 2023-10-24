@@ -8,17 +8,18 @@
         "urlGithub": "https://github.com/lucas-espi/Proyecto_final-Eureka"
     },
     {
+        "titulo": "Concesionaria",
+        "imagen": "/src/public/img/concesionaria.png",
+        "descripcion": "Consecionaria de autos - React",
+        "urlProyecto": "https://jolly-frangipane-128b30.netlify.app/",
+        "urlGithub": "https://github.com/lucas-espi/concesionaria/tree/master"
+    },
+    {
         "titulo": "Camino Aventura",
         "imagen": "/src/public/img/ca2.png",
         "descripcion": "Ecommerce proyecto final curso de JavaScript.",
         "urlProyecto": "https://lucas-espi.github.io/ProyectoFinal-JS/",
         "urlGithub": "https://github.com/lucas-espi/ProyectoFinal-JS"
-    },
-    {
-        "titulo": "Camino Aventura II",
-        "imagen": "/src/public/img/ca-ll2.png",
-        "descripcion": "Ecommerce proyecto final curso de React.js.",
-        "urlProyecto": "https://camino-aventura.netlify.app",
-        "urlGithub": "https://github.com/lucas-espi/Camino-Aventura-React"
     }
+    
 ]
